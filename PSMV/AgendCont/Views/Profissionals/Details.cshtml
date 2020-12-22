@@ -1,0 +1,50 @@
+﻿@model AgendCont.Models.Profissional
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Profissional</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ProfissionalId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>
